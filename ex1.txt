@@ -14,12 +14,18 @@
             padding: 0;
         }
         .hero {
-            text-align: center;
-            padding: 20px;
+            background: url('https://upload.wikimedia.org/wikipedia/commons/7/70/King_Von_2020.png') no-repeat center;
+            background-size: cover;
+            height: 400px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-shadow: 2px 2px 5px black;
         }
-        .hero img {
-            width: 100%;
-            max-width: 600px;
+        .hero h1 {
+            font-size: 3em;
+            background: rgba(0, 0, 0, 0.6);
+            padding: 10px;
             border-radius: 10px;
         }
         .warning {
@@ -49,7 +55,7 @@
 </head>
 <body>
     <div class="hero">
-        <img src="img/9a9.jpg" alt="King Von">
+        <h1>King Von - Anti Piracy</h1>
     </div>
     <div class="warning">
         <h2>Warning: Say No to Piracy</h2>
