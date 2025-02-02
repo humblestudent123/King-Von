@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>King Von - Anti Piracy</title>
+    
+    
+    
+    <audio id="bg-music" loop>
+      <source src="music/Ic6eYWNUXbU8.128.mp3" type="audio/mp3">
+      Your browser does not support the audio element.
+  </audio>
+  
+  <button id="play-btn">🎵 Play Music</button>
+  
+  <script>
+      document.getElementById("play-btn").addEventListener("click", function () {
+          let audio = document.getElementById("bg-music");
+          audio.play();
+          this.style.display = "none"; // Скрывает кнопку после нажатия
+      });
+  </script>
+  
+    
+    
+    
+    
+    
+    
+    
+    
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #000;
+            color: #fff;
+            text-align: center;
+            margin: 0;
+            padding: 0;
+        }
+        .hero {
+            background: url('img/9a9.jpg') no-repeat center;
+            background-size: cover;
+            height: 400px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-shadow: 2px 2px 5px black;
+        }
+        .hero h1 {
+            font-size: 3em;
+            background: rgba(0, 0, 0, 0.6);
+            padding: 10px;
+            border-radius: 10px;
+        }
+        .warning {
+            margin: 20px auto;
+            padding: 20px;
+            background: red;
+            color: white;
+            max-width: 800px;
+            border-radius: 10px;
+        }
+        .warning p {
+            font-size: 1.2em;
+        }
+    </style>
+</head>
+<body>
+    <div class="hero">
+        <h1>King Von - Anti Piracy</h1>
+    </div>
+    <div class="warning">
+        <h2>Warning: Say No to Piracy</h2>
+        <p>Support real artists. Piracy hurts the music industry and the legacy of artists like King Von. Stream and buy music legally.</p>
+    </div>
+</body>
+</html>
