@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>King Von - Anti Piracy</title>
+    <title>Virus</title>
     <style>
         body {
             font-family: Arial, sans-serif;
@@ -49,32 +49,31 @@
 </head>
 <body>
     <div class="hero">
-        <img src="img/9a9.jpg" alt="King Von">
+        <img src="img/images.jpg" alt="King Von">
     </div>
     <div class="warning">
         <h2>Warning: Say No to Piracy</h2>
         <p>Support real artists. Piracy hurts the music industry and the legacy of artists like King Von. Stream and buy music legally.</p>
     </div>
     <div class="music-controls">
-        <audio id="bg-music" loop>
+        <audio id="bg-music" loop autoplay>
             <source src="music/Ic6eYWNUXbU8.128.mp3" type="audio/mp3">
             Your browser does not support the audio element.
         </audio>
-        <button id="play-btn">🎵 Play Music</button>
         <button id="stop-btn">⏸ Stop Music</button>
     </div>
     <script>
         const audio = document.getElementById("bg-music");
-        const playBtn = document.getElementById("play-btn");
         const stopBtn = document.getElementById("stop-btn");
         
-        playBtn.addEventListener("click", function () {
-            audio.play();
-        });
-        
         stopBtn.addEventListener("click", function () {
-            audio.pause();
-            audio.currentTime = 0;
+            if (!audio.paused) {
+                audio.pause();
+                stopBtn.textContent = "▶ Play Music";
+            } else {
+                audio.play();
+                stopBtn.textContent = "⏸ Stop Music";
+            }
         });
     </script>
 </body>
